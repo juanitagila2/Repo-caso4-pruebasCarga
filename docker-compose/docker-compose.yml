@@ -1,0 +1,12 @@
+# El endpoint para realizar las pruebas es una petición GET sobre el recurso /proceso_c
+services:
+  server:
+    image: ggonzr/infracomp_caso4:1.2
+    container_name: infracomp_caso-4_aplicacion
+    ports:
+      - "3000:8080"
+    networks:
+      - infracomp
+
+networks:
+  infracomp: {}
